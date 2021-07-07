@@ -261,7 +261,7 @@ footer {
 }
 
 /* For width less than 501px */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     /* GENERAL */
     h1, h2 {
         white-space: normal;
