@@ -2,6 +2,7 @@ body{
     font-family: 'Roboto Slab', serif;
     padding: 0px !important;
     margin: 0px !important;
+    
 }
 .leftside{
     background-image: url(./lohp_en_1302x955.png);
@@ -15,6 +16,7 @@ body{
     
 
 }
+
 .rightside{
     padding:0px 40px;
 }
@@ -25,7 +27,7 @@ h1{
     font-weight: 700;
     margin-top: 40px;
 }
-h2{
+.h2{
     font-size: 30px;
     font-weight: bold;
     margin-top: 40px;
@@ -76,7 +78,7 @@ ul{
     justify-content: center;
     align-items: center;
 }
-ul li a{
+ul >li >a{
     font-size: 12px;
     
 }
@@ -156,4 +158,50 @@ ul li a{
 .buttons{
     display: flex;
     flex-direction: column;
+}
+/* sign up*/
+
+.bird{
+    color: rgb(29,161,242);
+    margin-left: 45%;
+}
+.birdh2{
+    font-size: 23px;
+    font-weight: 600;
+}
+.name{
+    border: 1px solid rgb(223, 221, 221);
+    border-radius: 5px;
+    height: 60px;
+}
+.name_input{
+    width: 100%;
+    border: none;
+}
+.email{
+    border: 1px solid rgb(223, 221, 221);
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 20px;
+}
+.modal-content{
+    border-radius: 15px;
+}
+.signup-link{
+    color:rgb(103, 103, 248);
+    margin-top: 60px;
+}
+.date{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.paragraf{
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(110, 110, 110);
+}
+.next-button{
+ width: 100%;
+ border-radius: 50px;
+ margin-bottom: 20px;
 }
