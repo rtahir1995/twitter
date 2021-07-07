@@ -4,6 +4,108 @@
     padding: 0;
 }
 
-.backShadow {
+/* PUPUP */
+
+.pupupSection {
+    visibility: hidden;
+}
+
+/* TWIT ICON */
+.signUpIcon {
+    width: 100%;
+    text-align: center;
+}
+
+.popupContent .twitImg {
+    height: 1.75rem;
+    color: rgba(29,161,242,1.00);
+}
+
+/* SIGN UP */
+
+.signUpForm {
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.signUpHeader {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+/* NAME EMAIL(PHONE) */
+
+.form-group {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#signUpForm input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE START*/
+
+@media screen and (min-width: 703px) and (min-height: 500px) {
+
+    .popup {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
     
+    .popupBody {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popupContent {
+        align-items: stretch;
+        max-width: 600px;
+        max-height: 650px;
+        background-color: #fff;
+        border-radius: 16px;
+        flex-grow: 1;
+        z-index: 99999999;
+    }
+}
+
+
+@media screen and (max-width: 702px) {
+    .popupContent {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+}
+
+
+@media screen and (max-height: 499px) {
+    .popupContent {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
 }
