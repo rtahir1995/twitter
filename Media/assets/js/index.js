@@ -1,18 +1,6 @@
-// $.ajax({
-//     url: '/form2.html',
-//     method: 'GET',
-//     // dataType: 'html'
-// }).done(function (cavab) {
-//     $('.sign').html(cavab)
-// }).catch(function(xeta) {
+"use strict"
 
-// });
-
-// var x = $('.fromSection')
-// element.style.display = 'none';
-
-// x.style.display = 'none'
-
+// PUPUP EFFECT
 $('.signUpButton').on('click', function () {
     $('.popupSection').css({
         visibility: 'visible'
