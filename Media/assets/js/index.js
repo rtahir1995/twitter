@@ -12,6 +12,7 @@
 // element.style.display = 'none';
 
 // x.style.display = 'none'
+
 $('.signUpButton').on('click', function () {
     $('.popupSection').css({
         visibility: 'visible'
