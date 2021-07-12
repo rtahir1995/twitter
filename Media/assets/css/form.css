@@ -7,7 +7,7 @@
 /* PUPUP */
 
 .popupSection {
-    visibility: hidden;
+    display: none;
 }
 
 /* TWIT ICON */
