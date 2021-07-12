@@ -56,6 +56,7 @@
 
 .group label {
     width: 100%;
+    margin: 0;
     border: rgb(207, 217, 222) solid 1px;
     border-radius: 4px;
 }
@@ -81,6 +82,7 @@
 /* Name Label */
 .nameLabel {
     position: absolute;
+    font-size: 17px;
     color: rgb(83, 100, 113);
     top: 16px;
     left: 8px;
@@ -156,13 +158,22 @@
 
 .nameError {
     visibility: hidden;
+    margin-left: 8px;
+    font-size: 13px;
+    color: rgb(224, 36, 94);
 }
 .emailError {
     visibility: hidden;
+    margin-left: 8px;
+    font-size: 13px;
+    color: rgb(224, 36, 94);
 }
 
 .phoneError {
     visibility: hidden;
+    margin-left: 8px;
+    font-size: 13px;
+    color: rgb(224, 36, 94);
 }
 
 /* Birthday*/
@@ -190,6 +201,7 @@
 }
 
 .formBirthday select{
+    width: 100%;
     appearance: none;
     overflow: visible;
     border: none;

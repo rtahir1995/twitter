@@ -218,3 +218,275 @@ function dateBirthDayUpdate () {
 }
 
 dateBirthDayUpdate();
+
+
+// $('#phone').focus(function() {
+//     console.log('focus')
+//     // $('phoneL').children('label').addClass('focusLabel');
+// })
+
+// $('#phone').on('focus', function () {
+//     console.log('focus');
+
+// });
+
+// input.onfocus = console.log('focus')
+
+// $('label').on('click', function () {
+//     alert('ttt');
+// })
+
+
+// $('.selectMonth').find('label').on('click', function () {
+//     // alert('click')
+//     $('#dateBirthMonth').focus();
+    
+// })
+
+// Focus and Wrong Name Label
+var wrongName = false;
+
+$('.nameInput').find('input').focus(function () {
+    if(wrongName === false) {
+        $('.nameL').find('label').css({
+            borderColor: 'rgb(29, 161, 242)',
+            boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
+        });
+    
+        $('.nameLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(29, 161, 242)'
+        });
+
+        $('.nameError').css({
+            visibility: 'hidden'
+        });
+    } else if (wrongName === true) {
+        $('.nameL').find('label').css({
+            borderColor: 'rgb(224, 36, 94)',
+            boxShadow: 'rgb(224, 36, 94) 0px 0px 0px 1px'
+        });
+    
+        $('.nameLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(224, 36, 94)'
+        });
+
+        $('.nameError').css({
+            visibility: 'visible'
+        });
+    } 
+
+    $('.nameCounter').css({
+        visibility: 'visible'
+    });
+});
+
+$('.nameInput').find('input').focusout(function () {
+    let nameInput = $('.nameInput').find('input').val();
+
+
+    if (wrongName === false) {
+        $('.nameL').find('label').css({
+            borderColor: 'rgb(207, 217, 222)',
+            boxShadow: 'none'
+        })
+    } else {
+        $('.nameL').find('label').css({
+            boxShadow: 'none'
+        })
+    }
+    
+    if (nameInput === '' & wrongName === false) {
+        $('.nameLabel').css({
+            fontSize: '17px',
+            top: '16px',
+            color: 'rgb(83, 100, 113)'
+        });
+        $('.nameCounter').css({
+            visibility: 'visible'
+        });
+    } if (nameInput === '' & wrongName === true) {
+        $('.nameLabel').css({
+            fontSize: '17px',
+            top: '16px',
+            color: 'rgb(83, 100, 113)'
+        });
+        $('.nameCounter').css({
+            visibility: 'visible'
+        });
+    } else {
+        $('.nameLabel').css({
+            color: 'rgb(83, 100, 113)'
+        });
+        $('.nameCounter').css({
+            visibility: 'hidden'
+        });
+    }
+});
+
+
+
+$('#name').on('input', function (){
+    let nameInput = $('.nameInput').find('input').val();
+    let nameCounter = nameInput.length;
+    $('.nameCounter').text(`${nameCounter} / 50`)
+
+    if (nameCounter === 0) {
+        $('.nameL').find('label').css({
+            borderColor: 'rgb(224, 36, 94)',
+            boxShadow: 'rgb(224, 36, 94) 0px 0px 0px 1px'
+        });
+
+        $('.nameLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(224, 36, 94)'
+        });
+
+        $('.nameError').css({
+            visibility: 'visible'
+        });
+
+        wrongName = true;
+    } else {
+        $('.nameL').find('label').css({
+            borderColor: 'rgb(29, 161, 242)',
+            boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
+        });
+        
+        $('.nameLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(29, 161, 242)'
+        });
+
+        $('.nameError').css({
+            visibility: 'hidden'
+        });
+
+        wrongName = false;
+    }
+});
+
+
+// Focus and Wrong Phone Label
+var wrongPhone = false;
+
+$('.phoneInput').find('input').focus(function () {
+    if(wrongPhone === false) {
+        $('.phoneL').find('label').css({
+            borderColor: 'rgb(29, 161, 242)',
+            boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
+        });
+    
+        $('.phoneLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(29, 161, 242)'
+        });
+
+        $('.phoneError').css({
+            visibility: 'hidden'
+        });
+    } else if (wrongPhone === true) {
+        $('.phoneL').find('label').css({
+            borderColor: 'rgb(224, 36, 94)',
+            boxShadow: 'rgb(224, 36, 94) 0px 0px 0px 1px'
+        });
+    
+        $('.phoneLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(224, 36, 94)'
+        });
+
+        $('.phoneError').css({
+            visibility: 'visible'
+        });
+    } 
+
+});
+
+$('.phoneInput').find('input').focusout(function () {
+    let phoneInput = $('.phoneInput').find('input').val();
+
+
+    if (wrongPhone === false) {
+        $('.phoneL').find('label').css({
+            borderColor: 'rgb(207, 217, 222)',
+            boxShadow: 'none'
+        })
+    } else {
+        $('.phoneL').find('label').css({
+            boxShadow: 'none'
+        })
+    }
+    
+    if (phoneInput === '' & wrongPhone === false) {
+        $('.phoneLabel').css({
+            fontSize: '17px',
+            top: '16px',
+            color: 'rgb(83, 100, 113)'
+        });
+
+    } if (phoneInput === '' & wrongPhone === true) {
+        $('.phoneLabel').css({
+            fontSize: '17px',
+            top: '16px',
+            color: 'rgb(83, 100, 113)'
+        });
+
+    } else {
+        $('.phoneLabel').css({
+            color: 'rgb(83, 100, 113)'
+        });
+    }
+});
+
+
+
+$('#phone').on('input', function (){
+    let phoneInput = $('.phoneInput').find('input').val();
+    let phoneCounter = phoneInput.length;
+
+    if (phoneCounter === 0) {
+        $('.phoneL').find('label').css({
+            borderColor: 'rgb(224, 36, 94)',
+            boxShadow: 'rgb(224, 36, 94) 0px 0px 0px 1px'
+        });
+
+        $('.phoneLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(224, 36, 94)'
+        });
+
+        $('.phoneError').css({
+            visibility: 'visible'
+        });
+
+        wrongPhone = true;
+    } else {
+        $('.phoneL').find('label').css({
+            borderColor: 'rgb(29, 161, 242)',
+            boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
+        });
+        
+        $('.phoneLabel').css({
+            fontSize: '13px',
+            top: '5px',
+            color: 'rgb(29, 161, 242)'
+        });
+
+        $('.phoneError').css({
+            visibility: 'hidden'
+        });
+
+        wrongPhone = false;
+    }
+});
+
+

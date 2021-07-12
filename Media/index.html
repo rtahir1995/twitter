@@ -25,7 +25,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/form.css">
-    <link rel="stylesheet" href="./demo.css">
 
     <title>Twitter. It’s what’s happening</title>
 </head>
@@ -71,10 +70,10 @@
                                             <div class="nameCounter">0 / 50</div>
                                         </div>
                                         <div class="nameInput">
-                                            <input type="text" id="name">
+                                            <input type="text" id="name" maxlength="50">
                                         </div>
                                     </label>
-                                    <span class="nameError">What’s your name?</span>
+                                    <div class="nameError">What’s your name?</div>
                                 </div>
                             </div>
 
@@ -89,7 +88,7 @@
                                             <input type="tel" id="phone">
                                         </div>
                                     </label>
-                                    <span class="phoneError"></span>
+                                    <span class="phoneError">Please enter a valid phone number.</span>
                                 </div>
                             </div>
 
@@ -104,7 +103,7 @@
                                             <input type="email" id="email">
                                         </div>
                                     </label>
-                                    <span class="emailError"></span>
+                                    <span class="emailError">Please enter a valid email.</span>
                                 </div>
                             </div>
                             <div class="labelChange">
@@ -307,6 +306,7 @@
 
     <!-- JavaScript -->
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>
