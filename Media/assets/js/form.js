@@ -461,7 +461,7 @@ $('#email').on('input', function (){
 
 //Select Month
 
-$('#dateBirthMonth').focus(function () {
+$('.selectMonth').find('select').focus(function () {
     $('.selectMonth').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
@@ -473,7 +473,7 @@ $('#dateBirthMonth').focus(function () {
     })
 })
 
-$('#dateBirthMonth').focusout(function () {
+$('.selectMonth').find('select').focusout(function () {
     $('.selectMonth').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
@@ -481,13 +481,13 @@ $('#dateBirthMonth').focusout(function () {
     });
 
     $('.monthLabel').css({
-        color: 'rgb(207, 217, 222)'
+        color: 'rgb(83, 100, 113)'
     })  
 })
 
 //Select Day
 
-$('#dateBirthDay').focus(function () {
+$('.selectDay').find('select').focus(function () {
     $('.selectDay').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
@@ -499,7 +499,7 @@ $('#dateBirthDay').focus(function () {
     })
 });
 
-$('#dateBirthDay').focusout(function () {
+$('.selectDay').find('select').focusout(function () {
     $('.selectDay').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
@@ -507,13 +507,13 @@ $('#dateBirthDay').focusout(function () {
     });
 
     $('.dayLabel').css({
-        color: 'rgb(207, 217, 222)'
+        color: 'rgb(83, 100, 113)'
     })  
 });
 
 //Select Year
 
-$('#dateBirthYear').focus(function () {
+$('.selectYear').find('select').focus(function () {
     $('.selectYear').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
@@ -525,7 +525,7 @@ $('#dateBirthYear').focus(function () {
     })
 })
 
-$('#dateBirthYear').focusout(function () {
+$('.selectYear').find('select').focusout(function () {
     $('.selectYear').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
@@ -533,6 +533,54 @@ $('#dateBirthYear').focusout(function () {
     });
 
     $('.yearLabel').css({
-        color: 'rgb(207, 217, 222)'
+        color: 'rgb(83, 100, 113)'
     })  
 })
+
+// NEXT BUTTON
+
+$('input').on('input', function() {
+    let nameCounter = $('#name').val().length;
+    let phoneCounter = $('#phone').val().length;
+    let emailCounter = $('#email').val().length;
+    let monthCounter = $('.selectMonth').find('select option:selected').val();
+    let dayCounter = $('.selectDay').find('select option:selected').val();
+    let yearCounter = $('.selectYear').find('select option:selected').val();
+
+    if (nameCounter !== 0 & (phoneCounter !== 0 || emailCounter !== 0) & monthCounter > 0 & dayCounter > 0 & yearCounter > 0) {
+        $('.nextSignUp').css({
+            opacity: '1'
+        });
+
+        $('.nextSignUp').removeAttr('disabled');
+    } else {
+        $('.nextSignUp').css({
+            opacity: '0.5'
+        });
+
+        $('.nextSignUp').prop('disabled', true);
+    }
+});
+
+$('select').on('change', function() {
+    let nameCounter = $('#name').val().length;
+    let phoneCounter = $('#phone').val().length;
+    let emailCounter = $('#email').val().length;
+    let monthCounter = $('.selectMonth').find('select option:selected').val();
+    let dayCounter = $('.selectDay').find('select option:selected').val();
+    let yearCounter = $('.selectYear').find('select option:selected').val();
+
+    if (nameCounter !== 0 & (phoneCounter !== 0 || emailCounter !== 0) & monthCounter > 0 & dayCounter > 0 & yearCounter > 0) {
+        $('.nextSignUp').css({
+            opacity: '1'
+        });
+
+        $('.nextSignUp').removeAttr('disabled');
+    } else {
+        $('.nextSignUp').css({
+            opacity: '0.5'
+        });
+
+        $('.nextSignUp').prop('disabled', true);
+    }
+});
