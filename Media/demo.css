@@ -209,12 +209,6 @@
     outline-style: none;
 }
 
-.formBirthday label {
-    width: 100%;
-    border: rgb(207, 217, 222) solid 1px;
-    border-radius: 4px;
-}
-
 .formSvg {
     position: absolute;
     color: rgb(83, 100, 113);
@@ -227,6 +221,13 @@
 }
 
 /* Month Label */
+
+.selectMonth {
+    width: 100%;
+    border: rgb(207, 217, 222) solid 1px;
+    border-radius: 4px;
+}
+
 .monthLabel {
     position: absolute;
     font-size: 13px;
@@ -252,6 +253,12 @@
 
 /* Day Label */
 
+.selectDay {
+    width: 100%;
+    border: rgb(207, 217, 222) solid 1px;
+    border-radius: 4px;
+}
+
 .dayLabel {
     position: absolute;
     font-size: 13px;
@@ -275,6 +282,12 @@
 }
 
 /* Year Label */
+
+.selectYear {
+    width: 100%;
+    border: rgb(207, 217, 222) solid 1px;
+    border-radius: 4px;
+}
 
 .yearLabel {
     position: absolute;
