@@ -422,7 +422,7 @@ $('#email').on('input', function (){
     let emailCounter = emailInput.length;
 
     if (emailCounter === 0) {
-        $('.emailL').find('label').css({
+        $('.emailL').css({
             borderColor: 'rgb(224, 36, 94)',
             boxShadow: 'rgb(224, 36, 94) 0px 0px 0px 1px'
         });
@@ -439,7 +439,7 @@ $('#email').on('input', function (){
 
         wrongEmail = true;
     } else {
-        $('.emailL').find('label').css({
+        $('.emailL').css({
             borderColor: 'rgb(29, 161, 242)',
             boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
         });
@@ -462,7 +462,7 @@ $('#email').on('input', function (){
 //Select Month
 
 $('#dateBirthMonth').focus(function () {
-    $('.selectMonth').find('label').css({
+    $('.selectMonth').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
         fill: 'rgb(29, 161, 242)'
@@ -474,7 +474,7 @@ $('#dateBirthMonth').focus(function () {
 })
 
 $('#dateBirthMonth').focusout(function () {
-    $('.selectMonth').find('label').css({
+    $('.selectMonth').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
         fill: 'rgb(207, 217, 222)'
@@ -488,7 +488,7 @@ $('#dateBirthMonth').focusout(function () {
 //Select Day
 
 $('#dateBirthDay').focus(function () {
-    $('.selectDay').find('label').css({
+    $('.selectDay').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
         fill: 'rgb(29, 161, 242)'
@@ -500,7 +500,7 @@ $('#dateBirthDay').focus(function () {
 });
 
 $('#dateBirthDay').focusout(function () {
-    $('.selectDay').find('label').css({
+    $('.selectDay').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
         fill: 'rgb(207, 217, 222)'
@@ -514,7 +514,7 @@ $('#dateBirthDay').focusout(function () {
 //Select Year
 
 $('#dateBirthYear').focus(function () {
-    $('.selectYear').find('label').css({
+    $('.selectYear').css({
         borderColor: 'rgb(29, 161, 242)',
         boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
         fill: 'rgb(29, 161, 242)'
@@ -526,7 +526,7 @@ $('#dateBirthYear').focus(function () {
 })
 
 $('#dateBirthYear').focusout(function () {
-    $('.selectYear').find('label').css({
+    $('.selectYear').css({
         border: 'rgb(207, 217, 222) 1px solid',
         boxShadow: 'none',
         fill: 'rgb(207, 217, 222)'
