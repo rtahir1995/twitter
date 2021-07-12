@@ -223,6 +223,7 @@
 }
 
 .formSvg svg {
+    fill: currentColor;
     height: 1.5em;
 }
 
