@@ -3,13 +3,13 @@
 // PUPUP EFFECT
 $('.signUpButton').on('click', function () {
     $('.popupSection').css({
-        visibility: 'visible'
+        display: 'block'
     });
 } );
 
 $('.popup').on('click', function () {
     $('.popupSection').css({
-        visibility: 'hidden'
+        display: 'none'
     });
 } );
 
