@@ -1,63 +1,4 @@
 'use strict';
-// var users = [{
-//     name: "YourName",
-//     surname: 'YourSurname',
-//     email: 'youremail@gmail.com',
-//     phoneNumber: 'YourPhoneNumber',
-//     dateOfBirth: 'YourDateOfBirth'
-// },
-// {
-//     name: "YourName2",
-//     surname: 'YourSurname2',
-//     email: 'youremail2@gmail.com',
-//     phoneNumber: 'YourPhoneNumber2',
-//     dateOfBirth: 'YourDateOfBirth2'
-// },
-// {
-//     name: "YourName3",
-//     surname: 'YourSurname3',
-//     email: 'youremail3@gmail.com',
-//     phoneNumber: 'YourPhoneNumber3',
-//     dateOfBirth: 'YourDateOfBirth3'
-// }];
-
-// function validateForm (element) {
-//     var name = $('#name').val();
-//     var surname = $('#surname').val();
-//     var email = $('#email').val();
-//     $('.error-input').removeClass('error-input');
-
-//     if (element.id === 'name') {
-//         if (!name.trim()) {
-//             let mainDiv = $('#name').parent();
-//             mainDiv.addClass('error-input');
-//             var span = (mainDiv).find('span');
-//             span.html('Write your name, please!');
-//         }
-//     } else if (element.id === 'surname') {
-//         if (!surname.trim()) {
-//             console.log('Please, write your surname');
-//         }
-//     } else if (element.id === 'email') {
-//         if (!email.trim()) {
-//             console.log('Please, write your email');
-//         } else if (email.indexOf('@') === -1) {
-//             console.log('Please, write your correct email')
-//         } else {
-//             for (let user of users) {
-//                 if (email.toLowerCase() === user.email) {
-//                     console.log('This email has already been taken.')
-//                     break;
-//                 }; 
-//             }; 
-//         };
-//     }
-// }
-
-// $('#name, #surname, #email').on('input', function (){
-//     validateForm(this);
-// });
-
 
 // Email or Phone choice 
 
@@ -465,25 +406,31 @@ $('#email').on('input', function (){
 $('.selectMonth').find('select').focus(function () {
     $('.selectMonth').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
-        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
-        fill: 'rgb(29, 161, 242)'
+        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
     });
 
     $('.monthLabel').css({
         color: 'rgb(29, 161, 242)'
-    })
+    });
+
+    $('.selectMonth').find('svg').css({
+        fill: 'rgb(29, 161, 242)'
+    });
 })
 
 $('.selectMonth').find('select').focusout(function () {
     $('.selectMonth').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
-        boxShadow: 'none',
-        fill: 'rgb(207, 217, 222)'
+        boxShadow: 'none'
     });
 
     $('.monthLabel').css({
         color: 'rgb(83, 100, 113)'
-    })  
+    });
+    
+    $('.selectMonth').find('svg').css({
+        fill: 'rgb(83, 100, 113)'
+    });
 })
 
 //Select Day
@@ -491,25 +438,31 @@ $('.selectMonth').find('select').focusout(function () {
 $('.selectDay').find('select').focus(function () {
     $('.selectDay').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
-        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
-        fill: 'rgb(29, 161, 242)'
+        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
     });
 
     $('.dayLabel').css({
         color: 'rgb(29, 161, 242)'
-    })
+    });
+
+    $('.selectDay').find('svg').css({
+        fill: 'rgb(29, 161, 242)'
+    });
 });
 
 $('.selectDay').find('select').focusout(function () {
     $('.selectDay').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
-        boxShadow: 'none',
-        fill: 'rgb(207, 217, 222)'
+        boxShadow: 'none'
     });
 
     $('.dayLabel').css({
         color: 'rgb(83, 100, 113)'
-    })  
+    });
+    
+    $('.selectDay').find('svg').css({
+        fill: 'rgb(83, 100, 113)'
+    });
 });
 
 //Select Year
@@ -517,25 +470,32 @@ $('.selectDay').find('select').focusout(function () {
 $('.selectYear').find('select').focus(function () {
     $('.selectYear').find('label').css({
         borderColor: 'rgb(29, 161, 242)',
-        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px',
-        fill: 'rgb(29, 161, 242)'
+        boxShadow: 'rgb(29, 161, 242) 0px 0px 0px 1px'
     });
 
     $('.yearLabel').css({
         color: 'rgb(29, 161, 242)'
-    })
+    });
+
+    $('.selectYear').find('svg').css({
+        fill: 'rgb(29, 161, 242)'
+    });
 })
 
 $('.selectYear').find('select').focusout(function () {
     $('.selectYear').find('label').css({
         border: 'rgb(207, 217, 222) 1px solid',
-        boxShadow: 'none',
-        fill: 'rgb(207, 217, 222)'
+        boxShadow: 'none'
     });
 
     $('.yearLabel').css({
         color: 'rgb(83, 100, 113)'
-    })  
+    });
+
+    $('.selectYear').find('svg').css({
+        fill: 'rgb(83, 100, 113)'
+    });
+
 })
 
 // NEXT BUTTON
