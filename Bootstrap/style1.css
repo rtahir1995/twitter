@@ -1,0 +1,30 @@
+.date{
+    display: flex;
+    
+}
+.date-month, .date-day, .date-year{
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+}
+.date-day{
+   margin: 0px 10px
+}
+#date-month,#date-day,#date-year{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+   /* outline-style: none;
+    appearance: none;*/
+}
+.date-size{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.date-name{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}

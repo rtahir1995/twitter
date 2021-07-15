@@ -168,6 +168,7 @@ ul >li >a{
 .birdh2{
     font-size: 23px;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 .name{
     border: 1px solid rgb(223, 221, 221);
@@ -188,9 +189,11 @@ ul >li >a{
     border-radius: 15px;
 }
 .signup-link{
+    display: block;
     color:rgb(103, 103, 248);
-    margin-top: 60px;
+    margin-top: 20px ;
 }
+
 .date{
     margin-top: 20px;
     font-weight: bold;
@@ -203,5 +206,71 @@ ul >li >a{
 .next-button{
  width: 100%;
  border-radius: 50px;
- margin-bottom: 20px;
+ margin-top: 50px;
 }
+.login-button{
+    background-color: rgba(29,161,242,0.3);
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(29,161,242,0.3);
+    border-radius: 50px;
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+}
+.login-input1, .login-input2{
+    width: 20%;
+    height: 50px;
+    margin-top: 20px;
+}
+.login-page > a{
+    color: rgba(29,161,242);
+    margin-top: 10000px !important;
+}
+@media(max-width:702px){
+
+}
+.modal-header,.modal-body,.modal-footer{
+    border: none;
+}
+.signupemail{
+    border:  rgb(207, 217, 222) solid 1px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.signupdiv{
+    border:  rgb(207, 217, 222) solid 1px;
+    border-radius: 4px;
+    position: relative;
+}
+.form-control{
+    border: none;
+}
+#signup-input, #signup-email{
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.signupdiv #signup-input:focus{
+    border: none;
+    box-shadow: none;
+}
+.label1, .label2{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgb(83, 100, 113);
+    font-size: 17px;
+}
+.counter{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 13px;
+}
+
+
+
+
