@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 var users = [{
     username: 'Elshad',
     name: "Elshad",
@@ -75,3 +73,45 @@ function validateForm (element) {
 $('#name, #surname, #email').on('input', function (){
     validateForm(this);
 });
+
+
+
+
+// SIGN UP CHECK
+
+// function validateEmail(email) 
+//     {
+//         var re = /\S+@\S+\.\S+/;
+//         return re.test(email);
+//     }
+// var x = 'tahir@tahir.com'
+
+// console.log(validateEmail(x));
+
+
+// second mob
+
+// var phone = prompt('Введите номер');
+// var lenPhone = phone.length;
+// var tt=phone.split('');
+// if(lenPhone == 12){
+// tt.splice(2,"", "(");
+// tt.splice(6,"", ")");
+// tt.splice(10,"", "-");
+// tt.splice(13,"", "-");
+// }else if(lenPhone == 13){
+// tt.splice(3,"", "(");
+// tt.splice(7,"", ")");
+// tt.splice(11,"", "-");
+// tt.splice(14,"", "-");
+// }
+// alert(tt.join(''))
+
+
+
+
+
+
+
+
+
